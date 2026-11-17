@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <title>Foodcourt</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>rumah makan perwira</h1>
+        <img src="foodcourt.jpg" width="500" height="200">
+        <p>Selamat datang di rumah makan perwira</p>
+    </header>
+
+    <hr>
+
+    <!-- Link Foodcourt -->
+    <h3>Menu rumah makan</h3>
+    <a href="https://www.google.com">Akses Foodcourt</a>
+
+    <br><br>
+
+    <!-- Tabel Daftar Menu -->
+    <table border="1">
+        <caption><b>Daftar Menu Makanan</b></caption>
+
+        <tr>
+            <th>No</th>
+            <th>Nama Makanan</th>
+            <th>Harga</th>
+            <th>Gambar</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Nasi Goreng</td>
+            <td>Rp15.000</td>
+            <td>
+                <img src="nasigoreng.jpg" width="150" height="120">
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Mie Ayam</td>
+            <td>Rp12.000</td>
+            <td>
+                <img src="mieayam.jpg" width="150" height="120">
+            </td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Ayam Geprek</td>
+            <td>Rp18.000</td>
+            <td>
+                <img src="ayamgeprek.jpg" width="150" height="120">
+            </td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Sate Ayam</td>
+            <td>Rp20.000</td>
+            <td>
+                <img src="sateayam.jpg" width="150" height="120">
+            </td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Es Teh</td>
+            <td>Rp5.000</td>
+            <td>
+                <img src="esteh.jpg" width="150" height="120">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2026 Nama Anda</p>
+    </footer>
+
+</body>
+</html>

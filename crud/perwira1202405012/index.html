@@ -1,0 +1,544 @@
+<!DOCTYPE html> <html lang="id"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendaftaran Mahasiswa | UMPKU</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head> <body>
+<a class="lewati" href="#konten">Lewati ke konten</a>
+
+<div class="halaman">
+
+    <!-- HEADER -->
+    <header class="header" id="beranda">
+
+        <p class="identitas">Praktikum Pemrograman Web</p>
+
+        <h1>Universitas Muhammadiyah PKU Surakarta</h1>
+
+        <p>
+            KAMPUS SEHAT KUAT 
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGASI -->
+    <nav class="menu" aria-label="Navigasi utama">
+
+        <a href="#beranda">Beranda</a>
+
+        <a href="#profil">Profil</a>
+
+        <a href="#pendaftaran">Pendaftaran</a>
+
+        <a href="#layanan">Layanan</a>
+
+    </nav>
+
+
+    <!-- KONTEN -->
+    <main id="konten" tabindex="-1">
+
+
+        <!-- PROFIL MAHASISWA -->
+        <section id="profil" class="panel">
+
+            <h2>Profil Mahasiswa</h2>
+
+            <div class="profil-container">
+
+                <!-- FOTO -->
+                <div class="foto-profil">
+
+                    <img
+                        id="fotoTampil"
+                        src=""
+                        alt="Foto profil mahasiswa"
+                    >
+
+                    <div class="foto-placeholder" id="fotoPlaceholder">
+                        Foto Profil
+                    </div>
+
+                </div>
+
+
+                <!-- DATA PROFIL -->
+                <div class="biodata">
+
+                    <h3>Data Mahasiswa</h3>
+
+                    <div class="data-biodata">
+
+                        <p>
+                            <span>Nama</span>
+                            <strong id="tampilNama">
+                                Belum diisi
+                            </strong>
+                        </p>
+
+                        <p>
+                            <span>NIM</span>
+                            <strong id="tampilNim">
+                                Belum diisi
+                            </strong>
+                        </p>
+
+                        <p>
+                            <span>Program Studi</span>
+                            <strong id="tampilProdi">
+                                Belum diisi
+                            </strong>
+                        </p>
+
+                        <p>
+                            <span>Tempat, Tanggal Lahir</span>
+                            <strong id="tampilLahir">
+                                Belum diisi
+                            </strong>
+                        </p>
+
+                        <p>
+                            <span>Jenis Kelamin</span>
+                            <strong id="tampilKelamin">
+                                Belum diisi
+                            </strong>
+                        </p>
+
+                        <p>
+                            <span>Alamat</span>
+                            <strong id="tampilAlamat">
+                                Belum diisi
+                            </strong>
+                        </p>
+
+                        <p>
+                            <span>Email</span>
+                            <strong id="tampilEmail">
+                                Belum diisi
+                            </strong>
+                        </p>
+
+                        <p>
+                            <span>No. HP</span>
+                            <strong id="tampilHp">
+                                Belum diisi
+                            </strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FORM PENDAFTARAN -->
+        <section id="pendaftaran" class="panel">
+
+            <h2>Pendaftaran Mahasiswa</h2>
+
+            <p>
+                Silakan isi data pendaftaran mahasiswa pada formulir
+                berikut. Data akan ditampilkan pada bagian profil.
+            </p>
+
+
+            <form id="formPendaftaran">
+
+                <!-- DATA PRIBADI -->
+                <fieldset>
+
+                    <legend>Data Pribadi</legend>
+
+
+                    <div class="form-group">
+
+                        <label for="nama">
+                            Nama Lengkap
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="nim">
+                                NIM
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nim"
+                                name="nim"
+                                placeholder="Masukkan NIM"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="nik">
+                                NIK
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nik"
+                                name="nik"
+                                placeholder="Masukkan NIK"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="tempatLahir">
+                                Tempat Lahir
+                            </label>
+
+                            <input
+                                type="text"
+                                id="tempatLahir"
+                                name="tempatLahir"
+                                placeholder="Contoh: Surakarta"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="tanggalLahir">
+                                Tanggal Lahir
+                            </label>
+
+                            <input
+                                type="date"
+                                id="tanggalLahir"
+                                name="tanggalLahir"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Jenis Kelamin
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="kelamin"
+                                    value="Laki-laki"
+                                    required
+                                >
+                                Laki-laki
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="kelamin"
+                                    value="Perempuan"
+                                >
+                                Perempuan
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <!-- DATA AKADEMIK -->
+                <fieldset>
+
+                    <legend>Data Akademik</legend>
+
+
+                    <div class="form-group">
+
+                        <label for="prodi">
+                            Program Studi
+                        </label>
+
+                        <select
+                            id="prodi"
+                            name="prodi"
+                            required
+                        >
+
+                            <option value="">
+                                -- Pilih Program Studi --
+                            </option>
+
+                            <option value="D4 Elektromedis">
+                                D4 Elektromedis
+                            </option>
+
+                            <option value="Program Studi Kesehatan">
+                                Program Studi Kesehatan
+                            </option>
+
+                            <option value="Program Studi Keperawatan">
+                                Program Studi Keperawatan
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="tahunMasuk">
+                            Tahun Masuk
+                        </label>
+
+                        <select
+                            id="tahunMasuk"
+                            name="tahunMasuk"
+                            required
+                        >
+
+                            <option value="">
+                                -- Pilih Tahun --
+                            </option>
+
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+
+                        </select>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <!-- KONTAK -->
+                <fieldset>
+
+                    <legend>Data Kontak</legend>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="hp">
+                            Nomor HP
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="hp"
+                            name="hp"
+                            placeholder="08xxxxxxxxxx"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="alamat">
+                            Alamat Lengkap
+                        </label>
+
+                        <textarea
+                            id="alamat"
+                            name="alamat"
+                            rows="4"
+                            placeholder="Masukkan alamat lengkap"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <!-- FOTO -->
+                <fieldset>
+
+                    <legend>Foto Profil</legend>
+
+                    <div class="form-group">
+
+                        <label for="foto">
+                            Pilih Foto
+                        </label>
+
+                        <input
+                            type="file"
+                            id="foto"
+                            name="foto"
+                            accept="image/*"
+                        >
+
+                        <small>
+                            Format gambar JPG, JPEG, atau PNG.
+                        </small>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <!-- TOMBOL -->
+                <div class="tombol-form">
+
+                    <button
+                        type="submit"
+                        class="btn-simpan"
+                    >
+                        Simpan Data
+                    </button>
+
+                    <button
+                        type="button"
+                        id="btnReset"
+                        class="btn-reset"
+                    >
+                        Reset Data
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <div
+                id="pesan"
+                class="pesan"
+                role="status"
+                aria-live="polite"
+            ></div>
+
+        </section>
+
+
+
+        <!-- LAYANAN -->
+        <section id="layanan" class="panel">
+
+            <h2>Contoh Layanan Digital</h2>
+
+            <div class="kartu-grid">
+
+                <article class="kartu">
+
+                    <h3>Informasi Akademik</h3>
+
+                    <p>
+                        Informasi mengenai kegiatan perkuliahan,
+                        jadwal, dan kegiatan akademik mahasiswa.
+                    </p>
+
+                </article>
+
+
+                <article class="kartu">
+
+                    <h3>Pembelajaran Daring</h3>
+
+                    <p>
+                        Media pembelajaran untuk membantu mahasiswa
+                        mengakses materi dan tugas perkuliahan.
+                    </p>
+
+                </article>
+
+
+                <article class="kartu">
+
+                    <h3>Informasi Mahasiswa</h3>
+
+                    <p>
+                        Informasi mengenai kegiatan dan kebutuhan
+                        mahasiswa selama mengikuti perkuliahan.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            <strong>
+                Universitas Muhammadiyah PKU Surakarta
+            </strong>
+        </p>
+
+        <p>
+            Praktikum Pemrograman Web
+        </p>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body> </html>
